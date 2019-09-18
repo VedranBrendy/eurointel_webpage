@@ -1,4 +1,4 @@
-## [Eurointel j.d.o.o.](https://eurointel.eu)
+## [Eurointel j.d.o.o.](eurointel.eu)
 
 ### Company web page 
 
