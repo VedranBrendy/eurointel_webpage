@@ -1,0 +1,309 @@
+/* Your custom styles */
+
+:root {
+  --color-success: #28b485;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-secondary: #95a5a6;
+  --color-danger: #cd5c5c;
+  --color-warning: #e67e22;
+  --color-info: #3498db;
+}
+
+/* === Flash Messages === */
+.flash {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  width: 20rem;
+  height: auto;
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 3px;
+}
+.success-flash {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.warning-flash {
+  background-color: var(--color-warning);
+  color: var(--color-white);
+}
+
+.info-flash {
+  background-color: var(--color-info);
+  color: var(--color-white);
+}
+
+.error-flash {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+.secondary-flash {
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+}
+
+.flash-heading {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.flash-body p {
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+  font-size: 1.2rem;
+}
+.remove {
+  position: absolute;
+  top: 0.1rem;
+  right: 1rem;
+  font-size: 1.9rem;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.remove:hover {
+  cursor: pointer;
+}
+
+/* Navigation*/
+.navbar {
+  background-color: transparent;
+}
+.scrolling-navbar {
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.top-nav-collapse {
+  background-color: #667490;
+}
+footer.page-footer {
+  background-color: #667490;
+}
+
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('../img/phone.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../img/bigoffice.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../img/call.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+
+#map {
+  width: 100vw;
+  height: 500px;
+}
+/* Image properties for bubble */
+img {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.info-window {
+  font-family: 'Montserrat', sans-serif;
+}
+.info-content {
+  color: #999;
+}
+
+.page-footer p li {
+  list-style: none;
+}
+
+#info-bar {
+  display: inline;
+  font-size: 20px;
+}
+#info-bar i {
+  font-size: 40px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: yellowgreen;
+  color: rgb(58, 113, 195);
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .bg-silver {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: (1fr);
+    font-size: 1rem;
+    height: 70vh;
+  }
+  .bg-silver ul li h1 h4 h5,
+  .flex-center ul li {
+    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .zaposljavamo-naslov {
+    font-size: 2rem;
+  }
+  .zaposljavamo-podnaslov {
+    padding: 1px auto 1px auto;
+  }
+  #info-bar .my-5 {
+    margin: 10px auto !important;
+  }
+  #info-bar .text-center {
+    text-align: left !important;
+    padding-left: 80px;
+  }
+
+  #tko_smo {
+    height: 100vh;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 500px) and (max-width: 991.98px) {
+  .bg-silver {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: (1fr);
+    font-size: 1rem;
+    height: 70vh;
+  }
+  .bg-silver ul li h1 h4 h5,
+  .flex-center ul li {
+    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .zaposljavamo-naslov {
+    display: none;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .zaposljavamo-podnaslov {
+    padding: 1px auto;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .opis,
+  .uvijeti,
+  .nudimo {
+    font-size: 1rem;
+  }
+  .opis-sm,
+  .uvijeti-sm,
+  .nudimo-sm {
+    display: none;
+  }
+
+  #info-bar .my-5 {
+    margin: 20px auto !important;
+  }
+  #info-bar .text-center {
+    text-align: left !important;
+    padding-left: 80px;
+  }
+
+  #tko_smo {
+    height: 100vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #zaposljavamo h1 {
+    font-size: 2rem;
+  }
+  .bg-silver {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: (1fr);
+    font-size: 1rem;
+    height: 70vh;
+  }
+  .bg-silver ul li h4 h5,
+  .flex-center ul li {
+    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  h1 {
+    margin-bottom: 10px !important;
+  }
+  #info-bar .my-5 {
+    margin: 20px auto !important;
+  }
+  #tko_smo p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .bg-silver {
+    padding: 50px 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+  #tko_smo p {
+    font-size: 1.2rem;
+  }
+}
